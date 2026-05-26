@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming.HUB - Votre plateforme de jeux vidéo</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="logo-circle">
+        <span>GAMING.HUB</span>
+    </div>
+
+    
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="./content/jeux.html">Jeux</a></li>
+                <li><a href="./content/panier.html">Panier</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Rechercher">
+            </div>
+
+            <div class="auth-buttons">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <a href="./content/inscription.html" class="btn-inscription">Inscription</a>
+                <a href="./content/connexion.html" class="btn-connexion">Connexion</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content-wrapper">
+            <div class="hero-buttons">
+                <a href="#games" class="btn-primary">en savoir plus</a>
+                <a href="./content/jeux.html" class="btn-secondary">Voir les jeux</a>
+            </div>
+            
+            <div class="hero-text-content">
+                <h1 class="hero-title">Gaming.HUB</h1>
+                <p class="hero-text">
+                    Vous souhaitez vous évader ?<br>
+                    Vous êtes au bon endroit.<br>
+                    Découvrez une immense sélection de jeux vidéo<br>
+                    <strong>SUR PC, Playstation et Xbox</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <div class="container" id="games">
+        <header>
+            <h1 class="welcome-title">Bienvenue sur Gaming.HUB</h1>
+        </header>
+
+        <main class="games-grid">
+    
+            <!-- Red Dead Redemption II -->
+<article class="game-card featured" data-game="rdr2">
+    <div class="game-image" style="background: linear-gradient(135deg, #8B0000, #FF6B35); min-height: 400px;">
+        <!-- Test : afficher un texte si l'image ne charge pas -->
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-size: 24px; font-weight: bold; text-align: center; padding: 20px;">
+        </div>
+    </div>
+    <div class="game-overlay">
+        <button class="btn-panier">Ajouter au panier</button>
+    </div>
+</article>
+
+            <!-- Starfield -->
+            <article class="game-card" data-game="starfield">
+                <div class="bg-layer"></div> 
+                <div class="game-text-box">
+                    <h2 class="game-title">Starfield</h2>
+                    <p class="game-description">Prépare-toi à explorer l'infini. 
+                        Avec Starfield, embarque pour une aventure intergalactique 
+                        où chaque planète est une nouvelle découverte et chaque
+                         mission un nouveau défi. 
+                        L'univers t'attend — à toi de tracer ta route parmi les étoiles.</p>
+                </div>
+                <div class="game-image"></div>
+            </article>
+
+            <!-- Cyberpunk 2077 -->
+            <article class="game-card reverse" data-game="cyberpunk">
+                <div class="bg-layer"></div> 
+                <div class="game-image"></div>
+                <div class="game-text-box">
+                    <h2 class="game-title">CYBERPUNK 2077</h2>
+                    <p class="game-description">Bienvenue à Night City. 
+                        Plonge dans l'univers sombre et futuriste de Cyberpunk
+                         où la technologie règne et le danger est partout. 
+                        Entre implants cybernétiques,
+                         gangs puissants et missions à haut risque,
+                         forge ta légende dans la ville la plus dangereuse du futur</p>
+                </div>
+            </article>
+
+            <!-- Call of Duty -->
+            <article class="game-card" data-game="cod">
+                <div class="bg-layer"></div> 
+                <div class="game-text-box">
+                    <h2 class="game-title">CALL OF DUTY</h2>
+                    <p class="game-description">Prépare-toi pour le combat. Plonge dans l'univers intense de 
+                        Call of Duty 
+                        où chaque mission peut changer le cours de la bataille. 
+                        Entre opérations militaires, armes de pointe et affrontements explosifs, 
+                        teste tes réflexes et
+                         prouve ta valeur sur les champs de bataille les plus dangereux.</p>
+                </div>
+                <div class="game-image"></div>
+            </article>
+        </main>
+
+        <div class="see-more">
+            <button class="btn-voir-plus"><a href="./content/jeux.html">Voir plus</a></button>
+        </div>
+    </div>
+   
+    <section class="promo-section">
+        <h2 class="promo-title">Promo</h2>
+        
+        <div class="promo-grid">
+            <!-- Game Card 1 -->
+            <div class="promo-card" data-promo="horizon">
+                <div class="discount-badge">-20%</div>
+                <div class="game-cover"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Horizon Forbidden West</h3>
+                    <p class="game-platforms">(PC, PS5, Xbox)</p>
+                    <p class="game-date">18 février 2022</p>
+                </div>
+            </div>
+    
+            <!-- Game Card 2 -->
+            <div class="promo-card" data-promo="zelda">
+                <div class="discount-badge">-20%</div>
+                <div class="game-cover"></div>
+                <div class="game-info">
+                    <h3 class="game-title">The Legend of Zelda</h3>
+                    <p class="game-platforms">(PC, PS5, Xbox)</p>
+                    <p class="game-date">12 mai 2023</p>
+                </div>
+            </div>
+    
+            <!-- Game Card 3 -->
+            <div class="promo-card" data-promo="re">
+                <div class="discount-badge">-20%</div>
+                <div class="game-cover"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Resident Evil Requiem</h3>
+                    <p class="game-platforms">(PC, PS5, Xbox)</p>
+                    <p class="game-date">24 mars 2023</p>
+                </div>
+            </div>
+    
+            <!-- Game Card 4 -->
+            <div class="promo-card" data-promo="gt7">
+                <div class="discount-badge">-20%</div>
+                <div class="game-cover"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Gran Turismo 7</h3>
+                    <p class="game-platforms">(PC, PS5, Xbox)</p>
+                    <p class="game-date">4 mars 2022</p>
+                </div>
+            </div>
+    
+            <!-- Game Card 5 -->
+            <div class="promo-card" data-promo="baldurs">
+                <div class="discount-badge">-20%</div>
+                <div class="game-cover"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Baldur's Gate</h3>
+                    <p class="game-platforms">(PC, PS5, Xbox)</p>
+                    <p class="game-date">3 août 2023</p>
+                </div>
+            </div>
+    
+            <!-- Game Card 6 -->
+            <div class="promo-card" data-promo="gow">
+                <div class="discount-badge">-20%</div>
+                <div class="game-cover"></div>
+                <div class="game-info">
+                    <h3 class="game-title">God Of Wars Ragnarok</h3>
+                    <p class="game-platforms">(PC, PS5, Xbox)</p>
+                    <p class="game-date">9 novembre 2022</p>
+                </div>
+            </div>
+    
+            <!-- Game Card 7 -->
+            <div class="promo-card" data-promo="starfield2">
+                <div class="discount-badge">-20%</div>
+                <div class="game-cover"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Starfield</h3>
+                    <p class="game-platforms">(PC, PS5, Xbox)</p>
+                    <p class="game-date">6 septembre 2023</p>
+                </div>
+            </div>
+    
+            <!-- Game Card 8 -->
+            <div class="promo-card" data-promo="forza">
+                <div class="discount-badge">-20%</div>
+                <div class="game-cover"></div>
+                <div class="game-info">
+                    <h3 class="game-title">Forza Horizon 5</h3>
+                    <p class="game-platforms">(PC, PS5, Xbox)</p>
+                    <p class="game-date">9 novembre 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2 class="about-title">A Propos De Nous</h2>
+            
+            <div class="faq-container">
+                <!-- Question 1 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Qui sommes-nous ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Gaming.HUB est une plateforme de référence dédiée aux passionnés de jeux vidéo. Fondée en 2020, notre équipe d'experts sélectionne pour vous les meilleurs jeux . Nous nous engageons à vous offrir une expérience d'achat exceptionnelle avec des prix compétitifs et un service client réactif.</p>
+                    </div>
+                </div>
+    
+                <!-- Question 2 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Que proposons-nous exactement ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous proposons une large gamme de produits gaming : jeux vidéo pour toutes les plateformes (PC, PlayStation, Xbox). Notre catalogue est mis à jour régulièrement avec les dernières sorties.</p>
+                    </div>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Pourquoi choisir notre site ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Choisir Gaming.HUB, c'est opter pour : des prix compétitifs avec des promotions régulières, une livraison rapide et sécurisée, un service client disponible 6j/7, des conseils d'experts gaming, un système de fidélité avantageux, et une garantie satisfait ou retourné de 7 jours.</p>
+                    </div>
+                </div>
+    
+                <!-- Question 4 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quels sont nos produits les plus populaires ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos best-sellers incluent : les jeux AAA comme Horizon Forbidden West, The Legend of Zelda, God of War Ragnarök. Consultez notre section "Promo" pour les offres du moment !</p>
+                    </div>
+                </div>
+    
+                <!-- Question 5 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Comment passer une commande ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Passer commande est très simple : 1) Créez un compte ou connectez-vous, 2) Parcourez notre catalogue et ajoutez les produits au panier, 3) Accédez à votre panier et cliquez sur "Commander", 4) Saisissez vos informations de livraison, 5) Choisissez votre mode de paiement, 6) Confirmez votre commande. Vous recevrez un email de confirmation immédiat.</p>
+                    </div>
+                </div>
+    
+                <!-- Question 6 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quels sont les moyens de paiement disponibles ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous proposons plusieurs moyens de paiement sécurisés afin de vous offrir plus de flexibilité : -paiement en ligne par carte bancaire. -Paiement via PayPal. -Paiement à la livraison(disponible selon votre localisation). Tous les paiements en ligne sont sécurisées afin de garantir la protection de vos informations.</p>
+                    </div>
+                </div>
+    
+                <!-- Question 7 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Combien de temps prend la livraison ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous proposons deux optionsde livraison afin de répondre a vos besoins: -Livraison standard :entre 5 et 7 jours ouvrables . Livraison express : entre 2 et 3jours ouvrables.   Les delais peuvent varier légerement en fonction de votre localisation en Algérie et des conditions logistiques.  Une fois votre commande confirmée, nous faisons tout notre possible pour assurer une livraison rapide et fiable. </p>
+                    </div>
+                </div>
+    
+                <!-- Question 8 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Puis-je retourner un produit ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, Vous pouvez retourner un produit sous certaines conditions. Nous n'offrons pasde remboursement, mais nous proposons un échange : -Vous pouvez échanger votre jeu contre un autre dispoible sur notre site. -Si le nouveau jeu est plus cher, vous devrez payer la différence. Si le nouveau jeu est moins cher, la différence vous sera remboursée.  Le produit doit etre retourné dans son état d'origine. Le retour doit etre effectué dans un délai de 7 jours après réception de la commande . Pour toute demande, vveuillez contacter notre service client. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                
+                <div class="footer-brand">
+                    <h2 class="footer-logo">Gaming.HUB</h2>
+                    <p class="footer-tagline">Votre plateforme de jeux vidéo</p>
+                    
+                    <div class="social-section">
+                        <p class="social-text">Suivez-nous sur :</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Discord">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+               
+                <div class="footer-column">
+                    <h3 class="footer-title">Catégories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Action & Aventure</a></li>
+                        <li><a href="#">Comédie</a></li>
+                        <li><a href="#">Horreur</a></li>
+                        <li><a href="#">Animation</a></li>
+                        <li><a href="#">Fantaisie & RPG</a></li>
+                        <li><a href="#">Sport & Course</a></li>
+                        <li><a href="#">Stratégie</a></li>
+                        <li><a href="#">Simulation</a></li>
+                    </ul>
+                </div>
+    
+            
+                <div class="footer-column">
+                    <h3 class="footer-title">Support Client</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Informations Générales</a></li>
+                        <li><a href="#">Politique de Confidentialité</a></li>
+                        <li><a href="#">Conditions d'Utilisation</a></li>
+                        <li><a href="#">Centre d'Aide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Retours & Remboursements</a></li>
+                        <li><a href="#">Livraison</a></li>
+                    </ul>
+                </div>
+    
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Contactez-nous</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:contact@gaminghub.dz">contact@gaminghub.dz</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="contact-label">Téléphone</p>
+                                <a href="tel:+33198752300">01 98 75 23 00</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p class="contact-label">Horaires</p>
+                                <p>dimanche-jeudi : 9h-18h</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p class="contact-label">Adresse</p>
+                                <p>Tizi Ouzou, Algérie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                
+                <div class="footer-column newsletter-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="newsletter-text">
+                        Inscrivez-vous pour recevoir nos offres exclusives et les dernières actualités gaming.
+                    </p>
+                    <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                        <div class="input-group">
+                            <input 
+                                type="email" 
+                                placeholder="Votre adresse e-mail" 
+                                required
+                                class="newsletter-input"
+                            >
+                            <button type="submit" class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <p class="newsletter-privacy">
+                            <i class="fas fa-lock"></i> Vos données sont sécurisées
+                        </p>
+                    </form>
+                    
+                    <!-- Moyens de paiement -->
+                    <div class="payment-methods">
+                        <p class="payment-title">Moyens de paiement acceptés</p>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Gaming.HUB - Tous droits réservés</p>
+                    <div class="footer-legal">
+                        <a href="#">Mentions Légales</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Accessibilité</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="javascript/script.js"></script>
+<script src="../javascript/panier.js"></script>
+<script src="zoom-fix.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Se connecter - Gaming.HUB</title>
+    <link rel="stylesheet" href="../style/connexion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="body-background"></div>
+
+    <div class="logo-circle">
+        <span>Gaming.HUB</span>
+    </div>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./jeux.html">Jeux</a></li>
+            <li><a href="./panier.html">Panier</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            
+            <div class="form-section">
+                
+                <div class="form-header">
+                    <p class="subtitle">Commencer</p>
+                    <h1 class="title">Se connecter</h1>
+                    <div class="register-link">
+                        <span>Vous n'avez pas de compte ?</span>
+                        <a href="./inscription.html">Créer un compte</a>
+                    </div>
+                </div>
+
+                <!--  Formulaire avec ID pour JS -->
+                <form class="login-form" id="loginForm">
+                    <!--  Message d'erreur/succès -->
+                    <div id="loginMessage" class="form-message"></div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="loginIdentifier" placeholder="Nom d'utilisateur ou Email" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+                    <div class="forgot-password">
+                        <a href="#">Mot de passe oublié ?</a>
+                    </div>
+
+                    <button type="submit" class="btn-login">Connexion</button>
+                </form>
+            </div>
+
+            <div class="character-section"></div>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+
+
+    <script src="../javascript/connexion.js"></script>
+</body>
+</html>

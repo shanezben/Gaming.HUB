@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finaliser votre commande - Gaming.HUB</title>
+
+    <link rel="stylesheet" href="../style/panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Logo -->
+<div class="logo-circle">
+    <span>GAMING.HUB</span>
+</div>
+
+<!-- NAVBAR -->
+<header class="header">
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../index.html" class="active">Accueil</a></li>
+            <li><a href="./jeux.html">Jeux</a></li>
+            <li><a href="#">Panier</a></li>
+        </ul>
+
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Rechercher">
+        </div>
+
+        <div class="auth-buttons">
+            <i class="fas fa-shopping-cart cart-icon"></i>
+            <a href="./inscription.html" class="btn-inscription">Inscription</a>
+            <a href="./connexion.html" class="btn-connexion">Connexion</a>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="game-hero">
+    <div class="hero-background"></div>
+
+    <div class="hero-content">
+        <h1 class="hero-title">Sea of Stars</h1>
+
+        <div class="game-platforms">
+            <span><i class="fas fa-desktop"></i> PC</span>
+            <span><i class="fas fa-gamepad"></i> Xbox</span>
+            <span><i class="fab fa-playstation"></i> PlayStation 5</span>
+        </div>
+
+        <p class="hero-description">
+            Avec Sea of Stars, embarquez pour une aventure rétro envoûtante où la lumière et l'ombre s'entrelacent,
+            et où deux Enfants du Solstice portent l'espoir du monde.
+        </p>
+
+        <div class="hero-rating">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>(4.5/5)</span>
+        </div>
+
+        <div class="hero-buttons">
+            <button class="btn-hero btn-add-cart">
+                <i class="fas fa-shopping-cart"></i> Ajouter au panier
+            </button>
+
+            <button class="btn-hero btn-jeux">
+                <i class="fas fa-gamepad"></i><a href="./jeux.html">Jeux</a>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <h1 class="main-title">Finaliser votre commande</h1>
+
+    <!--  PAGE CHECKOUT COMPLÈTE -->
+    <section class="checkout-page">
+        <div class="checkout-container-full">
+
+            <!-- COLONNE GAUCHE -->
+            <div class="checkout-left-column">
+
+                <!-- 1. Information Personnelle -->
+                <div class="checkout-section-block">
+                    <div class="info-header-with-character">
+                        <div class="info-header">
+                            <h2 class="section-title-orange">Information</h2>
+                            <p class="already-account">Vous avez deja un comptee? <a href="#" class="link-connexion">connexion</a></p>
+                        </div>
+                        <div class="character-in-info">
+                            <img src="../images/image12.png" alt="Personnage Gaming" class="character-img-small">
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">Information personnel</h3>
+                    
+                    <form class="personal-info-form" id="checkoutForm" onsubmit="handleCheckout(event)">
+                        <div class="form-row-double">
+                            <div class="form-group-checkout">
+                                <label for="prenom" class="form-label-checkout">Prénom :</label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required class="form-input-rounded">
+                                <span class="error-message" id="prenom-error"></span>
+                            </div>
+                            <div class="form-group-checkout">
+                                <label for="nom" class="form-label-checkout">Nom :</label>
+                                <input type="text" id="nom" name="nom" placeholder="Nom" required class="form-input-rounded">
+                                <span class="error-message" id="nom-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group-checkout">
+                            <label for="telephone" class="form-label-checkout">Numéro de téléphone :</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="Numéro de téléphone" required class="form-input-rounded">
+                            <span class="error-message" id="telephone-error"></span>
+                        </div>
+
+                        <div class="form-group-checkout">
+                            <label for="email" class="form-label-checkout">Email :</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required class="form-input-rounded">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group-checkout">
+                            <label for="adresse" class="form-label-checkout">Adresse Postal :</label>
+                            <input type="text" id="adresse" name="adresse" placeholder="Adresse Postal" required class="form-input-rounded">
+                            <span class="error-message" id="adresse-error"></span>
+                        </div>
+
+                        <div class="form-group-checkout">
+                            <label for="ville" class="form-label-checkout">Ville :</label>
+                            <input type="text" id="ville" name="ville" placeholder="Ville" required class="form-input-rounded">
+                            <span class="error-message" id="ville-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn-continue-delivery">
+                            Continuer vers la livraison <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- 2. Livraison -->
+                <div class="checkout-section-block">
+                    <h2 class="section-title-orange">Livraison</h2>
+                    
+                    <div class="delivery-options">
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery" value="standard" checked>
+                            <div class="delivery-option-content">
+                                <div class="delivery-info">
+                                    <span class="delivery-name">Standard</span>
+                                    <span class="delivery-time">Livraison dans 5-7 jours</span>
+                                </div>
+                                <span class="delivery-price free">Gratuit</span>
+                            </div>
+                        </label>
+
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery" value="express">
+                            <div class="delivery-option-content">
+                                <div class="delivery-info">
+                                    <span class="delivery-name">Express</span>
+                                    <span class="delivery-time">Livraison dans 2-3 jours</span>
+                                </div>
+                                <span class="delivery-price paid">700 DA</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                
+                <div class="checkout-character-bottom">
+                    <img src="../images/image10.png" alt="Gaming Character" class="character-bottom-img">
+                </div>
+
+                <!-- PAIEMENT - NOUVELLE SECTION  -->
+                <div class="checkout-section-block payment-section-block">
+                    <h2 class="section-title-orange">Paiement</h2>
+                    
+                    <form id="paymentForm">
+                    
+                        <label class="payment-option">
+                            <input type="radio" name="payment_method" value="card" checked onchange="togglePayment('card')">
+                            <span>Carte Bancaire</span>
+                            <img src="https://img.icons8.com/color/48/000000/credit-card.png" alt="Card" class="icon-img">
+                        </label>
+
+                     
+                        <div id="card-form" class="card-details active">
+                            <div class="row">
+                                <div class="form-group-checkout">
+                                    <label for="card-number" class="form-label-checkout">Numéro de carte :</label>
+                                    <input type="text" id="card-number" placeholder="Numéro de carte" class="form-input-rounded">
+                                </div>
+                                <div class="form-group-checkout">
+                                    <label for="card-name" class="form-label-checkout">Nom sur la carte :</label>
+                                    <input type="text" id="card-name" placeholder="Nom sur la carte" class="form-input-rounded">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group-checkout">
+                                    <label for="card-date" class="form-label-checkout">Date d'expiration :</label>
+                                    <input type="text" id="card-date" placeholder="MM/AA" class="form-input-rounded">
+                                </div>
+                                <div class="form-group-checkout">
+                                    <label for="card-cvv" class="form-label-checkout">CVV :</label>
+                                    <input type="text" id="card-cvv" placeholder="123" maxlength="3" class="form-input-rounded">
+                                </div>
+                            </div>
+                        </div>
+
+  
+                        <label class="payment-option" style="margin-top: 20px;">
+                            <input type="radio" name="payment_method" value="paypal" onchange="togglePayment('paypal')">
+                            <span>PayPal</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="icon-img" style="height: 20px;">
+                        </label>
+                        
+                        <div id="paypal-form" class="card-details">
+                             <div class="form-group-checkout">
+                                <input type="text" placeholder="Email PayPal" class="form-input-rounded paypal-input">
+                             </div>
+                        </div>
+
+                      
+                        <label class="payment-option" style="margin-top: 20px;">
+                            <input type="radio" name="payment_method" value="cod" onchange="togglePayment('cod')">
+                            <span>Paiement à la livraison</span>
+                        </label>
+
+                       
+                        <button type="button" class="btn-validate-payment" id="validateBtn">
+                            <i class="fas fa-check-circle"></i> Valider le paiement
+                        </button>
+                    </form>
+                </div>
+    
+
+            </div>
+
+        
+            <div class="checkout-right-column">
+
+      
+                <h2 class="cart-title-centered">Votre Panier (2)</h2>
+                
+                <div class="cart-items-container">
+                    
+     
+                    <div class="cart-item-block">
+                        <div class="cart-item-image">
+                            <img src="../images/calistor-protocol.jpg" alt="The Calistor Protocol">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-item-name">The Calistor Protocol</h3>
+                            <p class="cart-item-info">genre : Horreur</p>
+                            <p class="cart-item-info">Plateforme : PS5</p>
+                            <div class="cart-item-price-row">
+                                <span class="cart-item-price-label">Prix :</span>
+                                <span class="cart-item-price">7500 DA</span>
+                            </div>
+                            <button class="btn-delete-item" onclick="removeItem(1)">Supprimer</button>
+                        </div>
+                    </div>
+
+            
+                    <div class="cart-item-block">
+                        <div class="cart-item-image">
+                            <img src="../images/dead-island-2.jpg" alt="Dead Island 2">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-item-name">Dead Island 2</h3>
+                            <p class="cart-item-info">genre : Horreur</p>
+                            <p class="cart-item-info">Plateforme : PC/PS5</p>
+                            <div class="cart-item-price-row">
+                                <span class="cart-item-price-label">Prix :</span>
+                                <span class="cart-item-price">7500 DA</span>
+                            </div>
+                            <button class="btn-delete-item" onclick="removeItem(2)">Supprimer</button>
+                        </div>
+                    </div>
+
+                </div>
+
+             
+                <div class="promo-code-section">
+                    <div class="promo-input-group">
+                        <input type="text" placeholder="Code Promo" class="promo-input">
+                        <button class="btn-apply-promo" type="button">APPLIQUER</button>
+                    </div>
+                </div>
+
+         
+                <div class="order-summary-figma">
+                    <div class="summary-row-figma">
+                        <div class="summary-bar">
+                            <span class="summary-bar-label">Livraison</span>
+                            <span class="summary-bar-value free">Gratuit</span>
+                        </div>
+                    </div>
+                    <div class="summary-row-figma">
+                        <div class="summary-bar">
+                            <span class="summary-bar-label">Réduction</span>
+                            <span class="summary-bar-value discount"></span>
+                        </div>
+                    </div>
+                    <div class="summary-total-figma">
+                        <span class="summary-total-label">Total :</span>
+                        <span class="summary-total-value">15000 DA</span>
+                    </div>
+                    <button class="btn-confirm-order" onclick="confirmOrder()">CONFIRMER LA COMMANDE</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-message"></span>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+       
+                <div class="footer-brand">
+                    <h2 class="footer-logo">Gaming.HUB</h2>
+                    <p class="footer-tagline">Votre plateforme de jeux vidéo</p>
+                    
+                    <div class="social-section">
+                        <p class="social-text">Suivez-nous sur :</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Discord">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+             
+                <div class="footer-column">
+                    <h3 class="footer-title">Catégories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Action & Aventure</a></li>
+                        <li><a href="#">Comédie</a></li>
+                        <li><a href="#">Horreur</a></li>
+                        <li><a href="#">Animation</a></li>
+                        <li><a href="#">Fantaisie & RPG</a></li>
+                        <li><a href="#">Sport & Course</a></li>
+                        <li><a href="#">Stratégie</a></li>
+                        <li><a href="#">Simulation</a></li>
+                    </ul>
+                </div>
+    
+         
+                <div class="footer-column">
+                    <h3 class="footer-title">Support Client</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Informations Générales</a></li>
+                        <li><a href="#">Politique de Confidentialité</a></li>
+                        <li><a href="#">Conditions d'Utilisation</a></li>
+                        <li><a href="#">Centre d'Aide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Retours & Remboursements</a></li>
+                        <li><a href="#">Livraison</a></li>
+                    </ul>
+                </div>
+    
+              
+                <div class="footer-column">
+                    <h3 class="footer-title">Contactez-nous</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:contact@gaminghub.dz">contact@gaminghub.dz</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="contact-label">Téléphone</p>
+                                <a href="tel:+33198752300">01 98 75 23 00</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p class="contact-label">Horaires</p>
+                                <p>dimanche-jeudi : 9h-18h</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p class="contact-label">Adresse</p>
+                                <p>Tizi Ouzou, Algérie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+        
+                <div class="footer-column newsletter-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="newsletter-text">
+                        Inscrivez-vous pour recevoir nos offres exclusives et les dernières actualités gaming.
+                    </p>
+                    <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                        <div class="input-group">
+                            <input 
+                                type="email" 
+                                placeholder="Votre adresse e-mail" 
+                                required
+                                class="newsletter-input"
+                            >
+                            <button type="submit" class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <p class="newsletter-privacy">
+                            <i class="fas fa-lock"></i> Vos données sont sécurisées
+                        </p>
+                    </form>
+                    
+              
+                    <div class="payment-methods">
+                        <p class="payment-title">Moyens de paiement acceptés</p>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+      
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 Gaming.HUB - Tous droits réservés</p>
+                    <div class="footer-legal">
+                        <a href="#">Mentions Légales</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Accessibilité</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/panier.js"></script>
+    <script src="../javascript/zoom-fix.js"></script>
+</body>
+</html>

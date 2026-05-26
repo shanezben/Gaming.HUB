@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte - Gaming.HUB</title>
+    <link rel="stylesheet" href="../style/inscription.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="body-background"></div>
+
+    <div class="logo-circle">
+        <span>Gaming.HUB</span>
+    </div>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./jeux.html">Jeux</a></li>
+            <li><a href="./panier.html">Panier</a></li>
+        </ul>
+    </nav>
+
+    <!-- réseaux sociaux ICI, avant le container, directement dans body -->
+    <div class="social-media">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="form-section">
+                <div class="form-header">
+                    <p class="subtitle">Commencer</p>
+                    <h1 class="title">Crée un nouveau compte</h1>
+                    <div class="login-link">
+                        <span>Deja membre ?</span>
+                        <a href="./connexion.html">se connecter</a>
+                    </div>
+                </div>
+
+                <form class="registration-form" id="registerForm">
+                    <div id="registerMessage" class="form-message"></div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="registerNom" placeholder="Nom" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="registerPrenom" placeholder="Prénom" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="registerUsername" placeholder="Nom d'utilisateur" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="registerEmail" placeholder="Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="registerPassword" placeholder="Mot de passe" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="registerConfirm" placeholder="Confirmer le mot de passe" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="conditions" required>
+                        <label for="conditions">J'accepte les conditions d'utilisation</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Crée un compte</button>
+                </form>
+            </div>
+
+            <div class="character-section"></div>
+        </div>
+    </div>
+
+    <script src="../javascript/inscription.js"></script>
+    <script>
+        document.querySelectorAll('.form-group input').forEach(input => {
+            input.addEventListener('focus', () => {
+                document.querySelector('.container').style.background = 'rgba(10, 10, 10, 0.7)';
+            });
+            input.addEventListener('blur', () => {
+                document.querySelector('.container').style.background = 'rgba(10, 10, 10, 0.55)';
+            });
+        });
+    </script>
+</body>
+</html>
